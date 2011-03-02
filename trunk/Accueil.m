@@ -10,10 +10,13 @@
 
 
 @implementation Accueil
+@synthesize app;
 @synthesize segmentedController;
 @synthesize j1, j2, j3, j4, j5; 
 @synthesize nomJ1, nomJ2, nomJ3, nomJ4, nomJ5;
 @synthesize validerNoms;
+@synthesize nbJoueurs;
+@synthesize manager;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -27,7 +30,9 @@
 */
 
 - (void)viewDidLoad {
-	nbJoueurs=4;
+	app = (TarotIpadAppDelegate*)[[UIApplication sharedApplication] delegate];
+	[app setNbJoueursPartie:4];
+	
 	self.title = @"Tarot";
 	self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 	
@@ -36,8 +41,12 @@
 	[segmentedController addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
 	[segmentedController release]; 
 	
+	manager = [[SQLManager alloc] initDatabase];
 	
-    [super viewDidLoad];
+	//Voir si on garde les parametres
+	[manager viderBase];
+    
+	[super viewDidLoad];
 }
 
 //action pour changer "d'onglet"
@@ -46,39 +55,46 @@
 	if(segmentedController.selectedSegmentIndex == 0){
 		j5.hidden=YES;
 		nomJ5.hidden=YES;
-		nbJoueurs=4;
+		[app setNbJoueursPartie:4];
 	}
 	else if(segmentedController.selectedSegmentIndex == 1){
 		j5.hidden=NO;
 		nomJ5.hidden=NO;
-		nbJoueurs=5;
-		
+		[app setNbJoueursPartie:5];		
 	}
 }
 
 - (void) valider:(id)sender{
-	TarotIpadAppDelegate *app = (TarotIpadAppDelegate*)[[UIApplication sharedApplication] delegate];
-	
-	if([[app joueurs] count] == 0){
-		NSInteger i;
+	NSInteger i;
+	//if([app nbJoueursPartie] == 0){
 		//creation tableau des joueurs avec noms et scores par défault
-		for (i=0; i<nbJoueurs; i++) {
+		for (i=0; i<[app nbJoueursPartie]; i++) {
+			/*
 			Joueur *joueurTemp=[[Joueur alloc] initWithNom:[NSString stringWithFormat:@"Joueur %d", i+1]];
 			[[app joueurs] addObject:joueurTemp];
 			[joueurTemp release];
-		}
+			 */
+			[manager ajouterJoueur:[NSString stringWithFormat:@"Joueur %d", i+1]:0];
+	//	}
 	}
 	//[joueurs release];
-	[[[app joueurs] objectAtIndex:0] setNom:nomJ1.text];	
-	[[[app joueurs] objectAtIndex:1] setNom:nomJ2.text];	
-	[[[app joueurs] objectAtIndex:2] setNom:nomJ3.text];	
-	[[[app joueurs] objectAtIndex:3] setNom:nomJ4.text];	
 	
 	
-	if(nbJoueurs==5){
-		[[[app joueurs] objectAtIndex:4] setNom:nomJ5.text];		
+	//[[[app joueurs] objectAtIndex:0] setNom:nomJ1.text];
+	[manager setNomJoueur:nomJ1.text:0];
+	//[[[app joueurs] objectAtIndex:1] setNom:nomJ2.text];
+	[manager setNomJoueur:nomJ2.text:1];
+	//[[[app joueurs] objectAtIndex:2] setNom:nomJ3.text];	
+	[manager setNomJoueur:nomJ3.text:2];
+	//[[[app joueurs] objectAtIndex:3] setNom:nomJ4.text];	
+	[manager setNomJoueur:nomJ4.text:3];
+	
+	if([app nbJoueursPartie]==5){
+		//[[[app joueurs] objectAtIndex:4] setNom:nomJ5.text];
+		[manager setNomJoueur:nomJ5.text:4];
 	}
-	
+	 
+	 
 	//a voir
 	segmentedController.hidden = YES;
 	
@@ -110,6 +126,7 @@
 
 
 - (void)dealloc {
+	[manager release];
     [super dealloc];
 }
 

@@ -8,18 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "TarotIpadAppDelegate.h"
+#import "SQLManager.h"
+#import "Score.h"
+#import "PartieJouee.h"
 
-@interface Partie : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
+
+@interface Partie : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDataSource, UITableViewDataSource> {
 	UIPickerView *pickerView1;
 	UIPickerView *pickerView2;
 	UIPickerView *pickerView3;
 	
-	NSArray *joueursArray;
-	NSArray *contratsArray;
-	NSArray *poigneesArray;
-	NSArray *chelemsArray;
-	NSArray *boutsArray;
-	NSArray *petitArray;
+	NSMutableArray *joueursArray;
+	NSMutableArray *contratsArray;
+	NSMutableArray *poigneesArray;
+	NSMutableArray *chelemsArray;
+	NSMutableArray *boutsArray;
+	NSMutableArray *petitArray;
 
 	UILabel *preneur, *contrat, *appele, *poignee, *chelem, *bouts, *petit;
 	UILabel *preneurJ4, *contratJ4;
@@ -29,18 +33,11 @@
 	
 	UIButton *valider;
 	
-	UILabel *nomJ1;
-	UILabel *nomJ2;
-	UILabel *nomJ3;
-	UILabel *nomJ4;
-	UILabel *nomJ5;
+	TarotIpadAppDelegate *app;
+	SQLManager *manager;
 	
-	UILabel *scoreJ1;
-	UILabel *scoreJ2;
-	UILabel *scoreJ3;
-	UILabel *scoreJ4;
-	UILabel *scoreJ5;
-	
+	UITableView *tableScores;
+	UITableView *tableParties;
 }
 
 @property (nonatomic, retain) IBOutlet UIPickerView* pickerView1;
@@ -51,11 +48,10 @@
 @property (nonatomic, retain) IBOutlet UISwitch* switchChelem;
 @property (nonatomic, retain) IBOutlet UITextField* score;
 @property (nonatomic, retain) IBOutlet UIButton* valider;
-
-@property (nonatomic, retain) IBOutlet UILabel *nomJ1, *nomJ2, *nomJ3, *nomJ4, *nomJ5,
-												*scoreJ1, *scoreJ2, *scoreJ3, *scoreJ4, *scoreJ5;
-
-- (void) valider;
+@property (nonatomic, retain) TarotIpadAppDelegate *app;
+@property (nonatomic, retain) SQLManager *manager;
+@property (nonatomic, retain) IBOutlet UITableView *tableScores, *tableParties;
+-(void) valider;
 -(void) afficherScores;
 -(void) retirerClavier:(id)sender;
 

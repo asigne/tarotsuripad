@@ -33,25 +33,25 @@ t1287727235
 s7657392
 
 N/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.h
-c000000004D5BC87A0000000000000151
-t1297860730
+c000000004D6E7BC20000000000000151
+t1299086274
 s337
 i<UIKit/UIKit.h>
 
 N/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m
-c000000004D5BC87A00000000000006BB
-t1297860730
-s1723
+c000000004D6E7BC200000000000009DA
+t1299086274
+s2522
 i"TarotIpadAppDelegate.h"
 
 N/Users/aurelien/Documents/TarotIpad/MainWindow.xib
-c000000004D5BC87A0000000000003E77
-t1297860730
-s15991
+c000000004D6E7BC20000000000002112
+t1299086274
+s8466
 
 N/Users/aurelien/Documents/TarotIpad/TarotIpad_Prefix.pch
-c000000004D5BC87A00000000000000BB
-t1297860730
+c000000004D6E7BC200000000000000BB
+t1299086274
 s187
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
@@ -94,8 +94,8 @@ t2
 s0
 
 N/Users/aurelien/Documents/TarotIpad/main.m
-c000000004D5BC87A000000000000016F
-t1297860730
+c000000004D6E7BC2000000000000016F
+t1299086274
 s367
 i<UIKit/UIKit.h>
 
@@ -104,9 +104,9 @@ t1297773807
 s15453392
 
 NTarotIpad-Info.plist
-c000000004D5BC87A00000000000004D6
-t1297860730
-s1238
+c000000004D6E7BC2000000000000038D
+t1299086274
+s909
 
 CCompileC build/TarotIpad.build/Debug-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
