@@ -73,141 +73,141 @@ s476
 i"Joueur.h"
 
 N/Users/aurelien/Documents/TarotIpad/Accueil.h
-c000000004D5BA6A4000000000000036F
-t1297852068
+c000000004D6E7C35000000000000036F
+t1299086389
 s879
 i<UIKit/UIKit.h>
 i"TarotIpadAppDelegate.h"
 i"Partie.h"
 
 N/Users/aurelien/Documents/TarotIpad/Accueil.m
-c000000004D5BC3680000000000000B94
-t1297859432
+c000000004D6E7C350000000000000B94
+t1299086389
 s2964
 i"Accueil.h"
 
 N/Users/aurelien/Documents/TarotIpad/Accueil.xib
-c000000004D5BC227000000000000BC1C
-t1297859111
+c000000004D6E7C35000000000000BC1C
+t1299086389
 s48156
 
 N/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.h
-c000000004D5BA51B0000000000000248
-t1297851675
+c000000004D6E7C350000000000000248
+t1299086389
 s584
 i<UIKit/UIKit.h>
 i"Accueil.h"
 i"Joueur.h"
 
 N/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m
-c000000004D5BA69300000000000007D5
-t1297852051
+c000000004D6E7C3500000000000007D5
+t1299086389
 s2005
 i"TarotIpadAppDelegate.h"
 
 N/Users/aurelien/Documents/TarotIpad/MainWindow.xib
-c000000004D515A8B0000000000003E77
-t1297177227
+c000000004D6E7C350000000000003E77
+t1299086389
 s15991
 
 N/Users/aurelien/Documents/TarotIpad/Partie.h
-c000000004D5BC6050000000000000687
-t1297860101
+c000000004D6E7C350000000000000687
+t1299086389
 s1671
 i<UIKit/UIKit.h>
 i"TarotIpadAppDelegate.h"
 
 N/Users/aurelien/Documents/TarotIpad/Partie.m
-c000000004D5BC6A50000000000003AB6
-t1297860261
+c000000004D6E7C350000000000003AB6
+t1299086389
 s15030
 i"Partie.h"
 
 N/Users/aurelien/Documents/TarotIpad/Partie.xib
-c000000004D5BC68100000000000122C0
-t1297860225
+c000000004D6E7C3500000000000122C0
+t1299086389
 s74432
 
 N/Users/aurelien/Documents/TarotIpad/TarotIpad_Prefix.pch
-c000000004D515A8B00000000000000BB
-t1297177227
+c000000004D6E7C3500000000000000BB
+t1299086389
 s187
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
-t1297860264
-s340
+t1299086374
+s374
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app.dSYM
-t1297860264
-s102
+t1299086372
+s136
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Accueil.nib
-t1297859161
+t1299086374
 s4339
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Info.plist
-t1297850160
+t1299086374
 s806
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/MainWindow.nib
-t1297850161
+t1299086374
 s986
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Partie.nib
-t1297860241
+t1299086374
 s5969
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/PkgInfo
-t1297850160
+t1299086374
 s8
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad
-t1297860264
+t1299086374
 s52480
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/accueil.jpg
-t1297850161
+t1299086374
 s248291
 
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/database.sql
-t1297850161
+t1299086374
 s4096
 
 N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o
-t1297860182
+t1299086377
 s64776
 
 N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o
-t1297850163
+t1299086377
 s9636
 
 N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o
-t1297860264
+t1299086377
 s92624
 
 N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpad.LinkFileList
-c000000004D5B9F300000000000000288
-t1297850160
+c000000004D6E7C290000000000000288
+t1299086377
 s648
 
 N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o
-t1297860182
+t1299086377
 s54688
 
 N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o
-t1297850163
+t1299086377
 s6284
 
 N/Users/aurelien/Documents/TarotIpad/database.sql
-c000000004D5B85A50000000000001000
-t1297843621
+c000000004D6E7C350000000000001000
+t1299086389
 s4096
 
 N/Users/aurelien/Documents/TarotIpad/main.m
-c000000004D515A8B000000000000016F
-t1297177227
+c000000004D6E7C35000000000000016F
+t1299086389
 s367
 i<UIKit/UIKit.h>
 
@@ -216,8 +216,8 @@ t1297850163
 s15113424
 
 NTarotIpad-Info.plist
-c000000004D515A8B00000000000004D6
-t1297177227
+c000000004D6E7C3500000000000004D6
+t1299086389
 s1238
 
 CCheck dependencies

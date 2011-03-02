@@ -12,7 +12,9 @@
 
 @synthesize window;
 @synthesize navController;
-@synthesize joueurs;
+//@synthesize joueurs;
+@synthesize nbJoueursPartie;
+@synthesize nbParties;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -22,8 +24,9 @@
     navController = [[UINavigationController alloc] init];
 	[window addSubview:navController.view];	
 	
-	joueurs = [[NSMutableArray alloc] init];//WithCapacity:nbJoueurs];
-	
+	//joueurs = [[NSMutableArray alloc] init];//WithCapacity:nbJoueurs];
+	nbJoueursPartie=0;
+	nbParties=0;
 	
 	Accueil *accueil = [[Accueil alloc] init];
 	[navController pushViewController:accueil animated:NO];

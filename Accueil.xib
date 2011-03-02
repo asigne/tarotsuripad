@@ -308,7 +308,7 @@
 							<int key="NSfFlags">16</int>
 						</object>
 						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Valider les nom</string>
+						<string key="IBUINormalTitle">Valider les noms</string>
 						<reference key="IBUIHighlightedTitleColor" ref="69206491"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
@@ -660,7 +660,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABDTwAAw+YAAA</bytes>
 					</object>
-					<string>{{-1220, -4}, {783, 1002}}</string>
+					<string>{{0, 61}, {783, 695}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
