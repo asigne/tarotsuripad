@@ -28,14 +28,14 @@
 	manager = [[SQLManager alloc] initDatabase];
 	
 	tableScores = [[UITableView alloc] initWithFrame:CGRectZero];
-	CGRect tableRectScore = CGRectMake(0.0, 690.0, 165.0, 220.0);
+	CGRect tableRectScore = CGRectMake(0.0, 700.0, 165.0, 220.0);
 	tableScores.frame = tableRectScore;
 	tableScores.dataSource = self;
 	[self.view addSubview:tableScores];
 	[tableScores release];
 	
 	tableParties = [[UITableView alloc] initWithFrame:CGRectZero];
-	CGRect tableRectPartie = CGRectMake(168.0, 690.0, 600.0, 220.0);
+	CGRect tableRectPartie = CGRectMake(168.0, 700.0, 600.0, 220.0);
 	tableParties.frame = tableRectPartie;
 	tableParties.dataSource = self;
 	[self.view addSubview:tableParties];
@@ -96,7 +96,6 @@
 	//creation de la liste des joueurs
 	joueursArray = [[NSMutableArray alloc] init];	
 	for (i=0; i<[app nbJoueursPartie]; i++) {
-		//NSLog(@"%d",i);
 		[joueursArray insertObject:(NSString *)[manager getNomJoueur:i] atIndex:i];
 	}
 	
@@ -307,16 +306,48 @@
 		 */
 		
 		[app setNbParties:[app nbParties]+1];
-		[manager nouvellePartie:[pickerView1 selectedRowInComponent:0] 
+		if([app nbJoueursPartie] == 4){
+			[manager nouvellePartie:[pickerView1 selectedRowInComponent:0] 
+							   :0 :[pickerView1 selectedRowInComponent:1] 
+							   :[pickerView2 selectedRowInComponent:0] :[pickerView3 selectedRowInComponent:1]
+							   :[pickerView2 selectedRowInComponent:1] :switchChelem.on
+							   :scoreObtenu :[pickerView3 selectedRowInComponent:0]];
+		}
+		else if([app nbJoueursPartie] == 5){
+			[manager nouvellePartie:[pickerView1 selectedRowInComponent:0] 
 							   :[pickerView1 selectedRowInComponent:2] :[pickerView1 selectedRowInComponent:1] 
 							   :[pickerView2 selectedRowInComponent:0] :[pickerView3 selectedRowInComponent:1]
 							   :[pickerView2 selectedRowInComponent:1] :switchChelem.on
 							   :scoreObtenu :[pickerView3 selectedRowInComponent:0]];
+		}
 		
 		scoreTotal = (scoreTotal+(scoreObtenu - scoreAObtenir))*coeffMulti+ primePoignee + primePetitAuBout + primeChelem;
 		
 		//mise a jour des scores de chaque joueur
-		NSInteger i;
+		[self miseAJourScores:[app nbJoueursPartie]:scoreTotal];
+		
+		//mise a jour affichage score
+		[self afficherScores];
+
+	}
+}
+
+-(void) miseAJourScores:(NSInteger)nbJoueurs:(NSInteger)scoreTotal{
+	NSInteger i;
+	if ([app nbJoueursPartie] == 4) {
+		for (i=0; i<[app nbJoueursPartie]; i++) {
+			if(i == [pickerView1 selectedRowInComponent:0]){
+				//preneur
+				[manager setScoreJoueur:(scoreTotal*3):i];
+			}
+			else{
+				//joueurs de la défense
+				[manager setScoreJoueur:(-scoreTotal):i];
+				
+			}
+		}
+	}
+	else if ([app nbJoueursPartie] ==5){
 		for (i=0; i<[app nbJoueursPartie]; i++) {
 			if(i == [pickerView1 selectedRowInComponent:0]){
 				if(i == [pickerView1 selectedRowInComponent:2]){
@@ -326,27 +357,38 @@
 				else{
 					//preneur seul
 					[manager setScoreJoueur:(scoreTotal*2):i];
-
+					
 				}
 			}
 			else if(i == [pickerView1 selectedRowInComponent:2]){
 				//appele
 				[manager setScoreJoueur:scoreTotal:i];
-
+				
 			}
 			else{
 				//joueurs de la défense
 				[manager setScoreJoueur:(-scoreTotal):i];
-
+				
 			}
 		}
 	}
-	[self afficherScores];
 }
 
 - (void) afficherScores{
 	[self.tableScores reloadData];
 	[self.tableParties reloadData];
+	
+	[pickerView1 selectRow:0 inComponent:0 animated:YES];
+	[pickerView1 selectRow:0 inComponent:1 animated:YES];
+	if ([app nbJoueursPartie] == 5) {
+		[pickerView1 selectRow:0 inComponent:2 animated:YES];
+	}
+	[pickerView2 selectRow:0 inComponent:0 animated:YES];
+	[pickerView2 selectRow:0 inComponent:1 animated:YES];
+	[pickerView3 selectRow:0 inComponent:0 animated:YES];
+	[pickerView3 selectRow:0 inComponent:1 animated:YES];
+	[switchChelem setOn:NO];
+	score.text = @"Score de l'attaque";
 }
 
 //retirer la clavier apres avoir ecrit le score
@@ -524,8 +566,6 @@
 		Score *scoreTmp = [manager.scores objectAtIndex:indexPath.row];
 		cell.textLabel.text =  scoreTmp.nom;
 		cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", scoreTmp.points];
-		//[NSString stringWithFormat:@"%d",scoreTmp.resultat];
-		NSLog(@"%@ %d", scoreTmp.nom, scoreTmp.points);
 		cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
 	else if(tableView == tableParties){
@@ -541,12 +581,21 @@
 								   partieJouee.petitPartie,
 								   partieJouee.chelemRPartie,
 								   partieJouee.scorePartie];*/
-			cell.textLabel.text = [NSString stringWithFormat:@"Partie %d :      %@     %@     %@", partieJouee.idPartie, partieJouee.preneurPartie,
-								   partieJouee.contratPartie,
-								   partieJouee.appelePartie];
-			
-			cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %d", partieJouee.boutsPartie, partieJouee.scorePartie];
-			//[NSString stringWithFormat:@"%d",score.resultat];
+			if ([app nbJoueursPartie] == 4) {
+				cell.textLabel.text = [NSString stringWithFormat:@"Partie %d :      %@     %@", partieJouee.idPartie, partieJouee.preneurPartie,
+									   partieJouee.contratPartie];
+			}
+			else if ([app nbJoueursPartie] == 5) {
+				cell.textLabel.text = [NSString stringWithFormat:@"Partie %d :      %@     %@     %@", partieJouee.idPartie, partieJouee.preneurPartie,
+									   partieJouee.contratPartie,
+									   partieJouee.appelePartie];
+			}
+			if(partieJouee.scorePartie == 0 || partieJouee.scorePartie == 1){
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"%@     %d point", partieJouee.boutsPartie, partieJouee.scorePartie];
+			}
+			else {
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"%@     %d points", partieJouee.boutsPartie, partieJouee.scorePartie];				
+			}
 			cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		}
 	}
