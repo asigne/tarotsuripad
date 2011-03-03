@@ -537,11 +537,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">valider</string>
+						<string key="label">btnValider</string>
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="724415374"/>
 					</object>
-					<int key="connectionID">63</int>
+					<int key="connectionID">64</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -811,7 +811,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">63</int>
+			<int key="maxID">64</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -836,6 +836,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>appele</string>
 							<string>bouts</string>
+							<string>btnValider</string>
 							<string>chelem</string>
 							<string>contrat</string>
 							<string>contratJ4</string>
@@ -848,13 +849,14 @@
 							<string>preneurJ4</string>
 							<string>score</string>
 							<string>switchChelem</string>
+							<string>tableParties</string>
 							<string>tableScores</string>
-							<string>valider</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UILabel</string>
 							<string>UILabel</string>
+							<string>UIButton</string>
 							<string>UILabel</string>
 							<string>UILabel</string>
 							<string>UILabel</string>
@@ -868,7 +870,7 @@
 							<string>UITextField</string>
 							<string>UISwitch</string>
 							<string>UITableView</string>
-							<string>UIButton</string>
+							<string>UITableView</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -877,6 +879,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>appele</string>
 							<string>bouts</string>
+							<string>btnValider</string>
 							<string>chelem</string>
 							<string>contrat</string>
 							<string>contratJ4</string>
@@ -889,8 +892,8 @@
 							<string>preneurJ4</string>
 							<string>score</string>
 							<string>switchChelem</string>
+							<string>tableParties</string>
 							<string>tableScores</string>
-							<string>valider</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -901,6 +904,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">bouts</string>
 								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">btnValider</string>
+								<string key="candidateClassName">UIButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">chelem</string>
@@ -951,12 +958,12 @@
 								<string key="candidateClassName">UISwitch</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">tableScores</string>
+								<string key="name">tableParties</string>
 								<string key="candidateClassName">UITableView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">valider</string>
-								<string key="candidateClassName">UIButton</string>
+								<string key="name">tableScores</string>
+								<string key="candidateClassName">UITableView</string>
 							</object>
 						</object>
 					</object>

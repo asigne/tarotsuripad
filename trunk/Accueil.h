@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "TarotIpadAppDelegate.h"
-//#import "Partie.h"
-#import "Joueur.h"
-#import "SQLManager.h"
+#import "TarotIpadAppDelegate.h"
 
 @class TarotIpadAppDelegate;
 @class Partie;
+@class SQLManager;
 
 @interface Accueil : UIViewController {
 	TarotIpadAppDelegate *app;
@@ -25,7 +23,6 @@
 	SQLManager *manager;
 }
 
-@property (nonatomic, retain) TarotIpadAppDelegate *app;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *segmentedController;
 @property (nonatomic, retain) IBOutlet UILabel *j1, *j2, *j3, *j4, *j5; 
 @property (nonatomic, retain) IBOutlet UITextField *nomJ1, *nomJ2, *nomJ3, *nomJ4, *nomJ5;

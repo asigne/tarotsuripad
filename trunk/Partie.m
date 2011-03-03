@@ -16,25 +16,11 @@
 @synthesize preneurJ4, contratJ4;
 @synthesize switchChelem;
 @synthesize score;
-@synthesize valider;
+@synthesize btnValider;
 @synthesize app;
 @synthesize manager;
 @synthesize tableScores;
 @synthesize tableParties;
-
-
-
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
-
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -54,7 +40,6 @@
 	tableParties.dataSource = self;
 	[self.view addSubview:tableParties];
 	[tableParties release];
-	
 	
 	if([app nbJoueursPartie] == 4){
 		self.title = @"4 joueurs";
@@ -129,8 +114,6 @@
 		[chelemsArray insertObject:(NSString *)[manager getLibelle:@"CHELEM":i] atIndex:i];
 	}
 	
-	
-	
 	//creation de la liste des nb de bouts
 	boutsArray = [[NSMutableArray alloc] init];	
 	for (i=0; i<[manager getNbLignes:@"BOUTS"]; i++) {
@@ -160,8 +143,6 @@
 }
 
 - (void) valider{
-	//TarotIpadAppDelegate *app = (TarotIpadAppDelegate*)[[UIApplication sharedApplication] delegate];
-	//NSInteger monScore = [score.text intValue];
 	if([score.text isEqualToString:@"Score de l'attaque"]){
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention" message:@"Le score saisi est invalide !"
 													   delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -295,13 +276,6 @@
 				break;
 		}
 		
-		/*if(chelem.on){
-			[app setChelemRealise:YES];
-		}
-		else{
-			[app setChelemRealise:NO];
-		}*/
-		
 		//determination de la prime pour la poignée
 		switch ([pickerView2 selectedRowInComponent:0]){
 			case 1:
@@ -347,25 +321,21 @@
 			if(i == [pickerView1 selectedRowInComponent:0]){
 				if(i == [pickerView1 selectedRowInComponent:2]){
 					//preneur et appelé
-					//[[[app joueurs] objectAtIndex:i] modifierScore:(scoreTotal*4)];
 					[manager setScoreJoueur:(scoreTotal*4):i];
 				}
 				else{
 					//preneur seul
-					//[[[app joueurs] objectAtIndex:i] modifierScore:(scoreTotal*2)];
 					[manager setScoreJoueur:(scoreTotal*2):i];
 
 				}
 			}
 			else if(i == [pickerView1 selectedRowInComponent:2]){
 				//appele
-				//[[[app joueurs] objectAtIndex:i] modifierScore:scoreTotal];
 				[manager setScoreJoueur:scoreTotal:i];
 
 			}
 			else{
 				//joueurs de la défense
-				//[[[app joueurs] objectAtIndex:i] modifierScore:-scoreTotal];
 				[manager setScoreJoueur:(-scoreTotal):i];
 
 			}
@@ -374,39 +344,13 @@
 	[self afficherScores];
 }
 
--(void) afficherScores{
-	//TarotIpadAppDelegate *app = (TarotIpadAppDelegate*)[[UIApplication sharedApplication] delegate];
-	
-	/*nomJ1.text = [[[app joueurs] objectAtIndex:0] nomJoueur];
-	nomJ2.text = [[[app joueurs] objectAtIndex:1] nomJoueur];
-	nomJ3.text = [[[app joueurs] objectAtIndex:2] nomJoueur];
-	nomJ4.text = [[[app joueurs] objectAtIndex:3] nomJoueur];
-	
-	scoreJ1.text = [NSString stringWithFormat:@"%.1f",[[[app joueurs] objectAtIndex:0] scoreJoueur]];
-	scoreJ2.text = [NSString stringWithFormat:@"%.1f",[[[app joueurs] objectAtIndex:1] scoreJoueur]];
-	scoreJ3.text = [NSString stringWithFormat:@"%.1f",[[[app joueurs] objectAtIndex:2] scoreJoueur]];
-	scoreJ4.text = [NSString stringWithFormat:@"%.1f",[[[app joueurs] objectAtIndex:3] scoreJoueur]];
-	scoreJ3.text = [NSString stringWithFormat:@"%.1f",[[[app joueurs] objectAtIndex:2] scoreJoueur]];
-
-
-	if([[app joueurs] count] == 5){
-		nomJ5.text = [[[app joueurs] objectAtIndex:4] nomJoueur];
-		scoreJ5.text = [NSString stringWithFormat:@"%.1f",[[[app joueurs] objectAtIndex:4] scoreJoueur]];
-	}	
-	else{
-		nomJ5.hidden=YES;
-		scoreJ5.hidden=YES;
-	}
-	*/
+- (void) afficherScores{
 	[self.tableScores reloadData];
 	[self.tableParties reloadData];
-	
-//	[self.tableParties scrollToNearestSelectedRowAtScrollPosition:UITableViewScrollPositionBottom animated:YES];
-
 }
 
 //retirer la clavier apres avoir ecrit le score
--(void) retirerClavier:(id)sender{
+- (void) retirerClavier:(id)sender{
 	NSInteger monScore = [score.text intValue];
 	if(monScore < 0 || monScore > 91 || [score.text isEqualToString:@""]){
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention" message:@"Le score saisi est invalide !"
@@ -425,7 +369,6 @@
     return YES;
 }
 
-
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -433,18 +376,15 @@
     // Release any cached data, images, etc. that aren't in use.
 }
 
-
 - (void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
     [super dealloc];
 }
-
 
 #pragma mark -
 #pragma mark UIPickerViewDataSource
@@ -531,7 +471,6 @@
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
 	NSInteger nbComponents = 0;
 	if(pickerView == pickerView1){
-		TarotIpadAppDelegate *app = (TarotIpadAppDelegate*)[[UIApplication sharedApplication] delegate];
 		if([app nbJoueursPartie] == 4){
 			nbComponents = 2;
 		}
@@ -546,32 +485,32 @@
 	return nbComponents;
 }
 
-
-
 #pragma mark -
 #pragma mark Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
+	NSInteger nbSections=0;
     if(tableView == tableScores){
-		return 1;
+		nbSections = 1;
 	}
 	else if(tableView == tableParties){
-		return 1;
+		nbSections = 1;
 	}
+	return nbSections;
 }
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
+	NSInteger nbLignesParSection = 0;
 	if(tableView == tableScores){
-		return [app nbJoueursPartie];
+		nbLignesParSection = [app nbJoueursPartie];
 	}
 	else if(tableView == tableParties){
-		return [app nbParties];
+		nbLignesParSection = [app nbParties];
 	}
+	return nbLignesParSection;
 }
-
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -582,10 +521,11 @@
     }
     if(tableView == tableScores){
 		[manager affichageScoreDepuisLaBase];
-		Score *score = [manager.scores objectAtIndex:indexPath.row];
-		cell.textLabel.text =  score.nom;
-		cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", score.points];
-		//[NSString stringWithFormat:@"%d",score.resultat];
+		Score *scoreTmp = [manager.scores objectAtIndex:indexPath.row];
+		cell.textLabel.text =  scoreTmp.nom;
+		cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", scoreTmp.points];
+		//[NSString stringWithFormat:@"%d",scoreTmp.resultat];
+		NSLog(@"%@ %d", scoreTmp.nom, scoreTmp.points);
 		cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
 	else if(tableView == tableParties){
@@ -612,16 +552,5 @@
 	}
     return cell;
 }
-
-/*
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-      //  [manager deleteFromDatabase:[manager.scores objectAtIndex:indexPath.row]];
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
-}*/
-
-
-
 
 @end

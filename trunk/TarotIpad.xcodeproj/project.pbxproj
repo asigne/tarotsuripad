@@ -14,8 +14,8 @@
 		0D03FDA8130E720A005E5707 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D03FDA7130E720A005E5707 /* Score.m */; };
 		0D66E727130AA87700E76DAD /* Partie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D66E725130AA87700E76DAD /* Partie.m */; };
 		0D66E728130AA87700E76DAD /* Partie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D66E726130AA87700E76DAD /* Partie.xib */; };
-		0D66EAAB130BD51800E76DAD /* accueil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D66EAAA130BD51800E76DAD /* accueil.jpg */; };
 		0DCC018F131E3F6900D74176 /* PartieJouee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCC018E131E3F6900D74176 /* PartieJouee.m */; };
+		0DE8C7B8131FC5C0001D4406 /* accueil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DE8C7B7131FC5C0001D4406 /* accueil.jpg */; };
 		0DFAB68A1301925100DF82C5 /* Accueil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAB6881301925100DF82C5 /* Accueil.m */; };
 		0DFAB68B1301925100DF82C5 /* Accueil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFAB6891301925100DF82C5 /* Accueil.xib */; };
 		1D3623260D0F684500981E51 /* TarotIpadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TarotIpadAppDelegate.m */; };
@@ -38,9 +38,9 @@
 		0D66E724130AA87700E76DAD /* Partie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partie.h; sourceTree = "<group>"; };
 		0D66E725130AA87700E76DAD /* Partie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Partie.m; sourceTree = "<group>"; };
 		0D66E726130AA87700E76DAD /* Partie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Partie.xib; sourceTree = "<group>"; };
-		0D66EAAA130BD51800E76DAD /* accueil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = accueil.jpg; path = ../../Downloads/accueil.jpg; sourceTree = SOURCE_ROOT; };
 		0DCC018D131E3F6900D74176 /* PartieJouee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PartieJouee.h; path = ../PartieJouee.h; sourceTree = "<group>"; };
 		0DCC018E131E3F6900D74176 /* PartieJouee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PartieJouee.m; path = ../PartieJouee.m; sourceTree = "<group>"; };
+		0DE8C7B7131FC5C0001D4406 /* accueil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accueil.jpg; sourceTree = "<group>"; };
 		0DFAB6871301925100DF82C5 /* Accueil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accueil.h; sourceTree = "<group>"; };
 		0DFAB6881301925100DF82C5 /* Accueil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accueil.m; sourceTree = "<group>"; };
 		0DFAB6891301925100DF82C5 /* Accueil.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Accueil.xib; sourceTree = "<group>"; };
@@ -92,7 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				0DFAB6871301925100DF82C5 /* Accueil.h */,
+				0DFAB6881301925100DF82C5 /* Accueil.m */,
 				0D66E724130AA87700E76DAD /* Partie.h */,
+				0D66E725130AA87700E76DAD /* Partie.m */,
 			);
 			name = "Fichiers h";
 			sourceTree = "<group>";
@@ -124,8 +126,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				0DFAB6881301925100DF82C5 /* Accueil.m */,
-				0D66E725130AA87700E76DAD /* Partie.m */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0DE8C7B7131FC5C0001D4406 /* accueil.jpg */,
 				0D03F67E130D2DFF005E5707 /* TarotIpad.sql */,
-				0D66EAAA130BD51800E76DAD /* accueil.jpg */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* TarotIpad-Info.plist */,
 			);
@@ -213,8 +213,8 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				0DFAB68B1301925100DF82C5 /* Accueil.xib in Resources */,
 				0D66E728130AA87700E76DAD /* Partie.xib in Resources */,
-				0D66EAAB130BD51800E76DAD /* accueil.jpg in Resources */,
 				0D03F67F130D2DFF005E5707 /* TarotIpad.sql in Resources */,
+				0DE8C7B8131FC5C0001D4406 /* accueil.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
