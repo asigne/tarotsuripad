@@ -25,8 +25,6 @@
 - (id) initDatabase;
 -(void) affichageScoreDepuisLaBase;
 -(void) affichagePartieJoueeDepuisLaBase;
-//- (void)insertIntoDatabase:(Score*)newScore;
-//- (void)deleteFromDatabase:(Score*)oldScore;
 
 -(void) nouvellePartie:(NSInteger)preneur:(NSInteger)appele:(NSInteger)contrat:(NSInteger)
 			   poignee:(NSInteger)petit:(NSInteger)chelemA:(bool)chelemR:(NSInteger)score:(NSInteger)nbBouts;

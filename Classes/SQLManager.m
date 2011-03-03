@@ -12,7 +12,7 @@
 @synthesize partiesJouees;
 
 
-- (id) initDatabase {
+-(id) initDatabase {
 	if(self = [super init]) {
 		//On définit le nom de la base de données
 		databaseName = @"TarotIpad.sql";
@@ -63,7 +63,6 @@
         //const char *sqlStatement = ("select * from JOUEURS where id='%d'",idJoueur);
 		
 		NSString *sqlStat = [NSString stringWithFormat:@"select count(*) from %@;",table];
-//		NSLog(sqlStat);
 		const char *sqlStatement = [sqlStat UTF8String];
 		//création d'un objet permettant de connaître le status de l'exécution de la requête
         sqlite3_stmt *compiledStatement;
@@ -72,7 +71,6 @@
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
 				// On lit les données stockées dans le fichier sql
 				nbLignes = sqlite3_column_int(compiledStatement, 0);
-				//NSLog(@"nblignes%d",nbLignes);
 			}
 		}
 	}
@@ -91,13 +89,10 @@
         // Préparation de la requête SQL qui va permettre d'ajouter un score à la BDD       
         NSString *sqlStat = [NSString stringWithFormat:@"INSERT INTO PARTIE VALUES (NULL, %d, %d, %d, %d, %d, %d, %d, %i, %d);",
 							 preneur+1, appele+1, contrat+1, poignee+1, chelemA+1, petit+1, nbBouts+1, chelemR, score];
-		NSLog(sqlStat);
-		
 		//conversion en char *
 		const char *sqlStatement = [sqlStat UTF8String];
 		//On utilise sqlite3_exec qui permet très simplement d'exécuter une requête sur la BDD
 		sqlite3_exec(database, sqlStatement,NULL,NULL,NULL);
-		//[self readScoresFromDatabase];
     }
     sqlite3_close(database);
 }
@@ -116,7 +111,6 @@
 		
 		
 		NSString *sqlStat = [NSString stringWithFormat:@"select * from %@ WHERE id='%d';",table ,idLibelle+1];
-//		NSLog(sqlStat);
 		const char *sqlStatement = [sqlStat UTF8String];
 		//création d'un objet permettant de connaître le status de l'exécution de la requête
         sqlite3_stmt *compiledStatement;
@@ -126,7 +120,6 @@
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
 				// On lit les données stockées dans le fichier sql
 				libelle = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
-				//NSLog(@"%@",libelle);
 			}
 		}
 	}
@@ -140,7 +133,6 @@
     if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
         // Préparation de la requête SQL qui va permettre d'ajouter un score à la BDD       
         NSString *sqlStat = [NSString stringWithFormat:@"INSERT INTO JOUEUR VALUES (NULL, '%@', %d);", nom, score];
-//		NSLog(sqlStat);
 		//conversion en char *
 		const char *sqlStatement = [sqlStat UTF8String];
 		//On utilise sqlite3_exec qui permet très simplement d'exécuter une requête sur la BDD
@@ -160,13 +152,11 @@
 		const char *sqlStatement = [sqlStat UTF8String];
 		//On utilise sqlite3_exec qui permet très simplement d'exécuter une requête sur la BDD
 		sqlite3_exec(database, sqlStatement,NULL,NULL,NULL);
-		
 		sqlStat = [NSString stringWithFormat:@"DELETE FROM PARTIE;"];
 		//conversion en char *
 		sqlStatement = [sqlStat UTF8String];
 		//On utilise sqlite3_exec qui permet très simplement d'exécuter une requête sur la BDD
 		sqlite3_exec(database, sqlStatement,NULL,NULL,NULL);
-		//[self readScoresFromDatabase];
     }
     sqlite3_close(database);
 }
@@ -183,7 +173,6 @@
         //const char *sqlStatement = ("select * from JOUEURS where id='%d'",idJoueur);
 		
 		NSString *sqlStat = [NSString stringWithFormat:@"select nom from JOUEUR WHERE id='%d';",idJoueur+1];
-		NSLog(sqlStat);
 		const char *sqlStatement = [sqlStat UTF8String];
 		//création d'un objet permettant de connaître le status de l'exécution de la requête
         sqlite3_stmt *compiledStatement;
@@ -192,7 +181,6 @@
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
 				// On lit les données stockées dans le fichier sql
 				nom = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)];
-				NSLog(@"%@",nom);
 			}
 		}
 	}
@@ -206,7 +194,6 @@
     if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
         // Préparation de la requête SQL qui va permettre d'ajouter un score à la BDD       
         NSString *sqlStat = [NSString stringWithFormat:@"UPDATE JOUEUR SET nom='%@' WHERE id='%d';",nom,idJoueur+1];
-	//	NSLog(sqlStat);
 		//conversion en char *
 		const char *sqlStatement = [sqlStat UTF8String];
 		//On utilise sqlite3_exec qui permet très simplement d'exécuter une requête sur la BDD
@@ -227,7 +214,6 @@
         //const char *sqlStatement = ("select * from JOUEURS where id='%d'",idJoueur);
 		
 		NSString *sqlStat = [NSString stringWithFormat:@"select score from JOUEUR WHERE id=%d;",idJoueur+1];
-//		NSLog(sqlStat);
 		const char *sqlStatement = [sqlStat UTF8String];
 		//création d'un objet permettant de connaître le status de l'exécution de la requête
         sqlite3_stmt *compiledStatement;
@@ -236,8 +222,6 @@
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
 				// On lit les données stockées dans le fichier sql
 				score = sqlite3_column_int(compiledStatement, 0);
-
-				NSLog(@"Score %d",score);
 			}
 		}
 	}
@@ -251,39 +235,15 @@
     // On ouvre la BDD à partir des fichiers système
     if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
         // Préparation de la requête SQL qui va permettre d'ajouter un score à la BDD  
-		
-		NSLog(@"score de la partie %d",score);
-		
 		NSInteger ancienScore=[self getScoreJoueur:idJoueur];
-		NSLog(@"ancien score %d",ancienScore);
-		
 		newScore = score+ancienScore;
-		
 		NSString *sqlStat = [NSString stringWithFormat:@"UPDATE JOUEUR SET score=%d WHERE id=%d",newScore,idJoueur+1];
-	//	NSLog(sqlStat);
 		//conversion en char *
 		const char *sqlStatement = [sqlStat UTF8String];
 		//On utilise sqlite3_exec qui permet très simplement d'exécuter une requête sur la BDD
 		sqlite3_exec(database, sqlStatement,NULL,NULL,NULL);
     }
     sqlite3_close(database);
-	
-	
-	
-	/*
-	// Déclaration de l'objet database
-    sqlite3 *database;
-    // On ouvre la BDD à partir des fichiers système
-    if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
-        // Préparation de la requête SQL qui va permettre d'ajouter un score à la BDD       
-        NSString *sqlStat = [NSString stringWithFormat:@"INSERT INTO JOUEUR VALUES (NULL, '%@', %d);", nom, score];
-		NSLog(sqlStat);
-		//conversion en char *
-		const char *sqlStatement = [sqlStat UTF8String];
-		//On utilise sqlite3_exec qui permet très simplement d'exécuter une requête sur la BDD
-		sqlite3_exec(database, sqlStatement,NULL,NULL,NULL);
-	}
-    sqlite3_close(database);*/
 }
 
 -(void) affichageScoreDepuisLaBase {
@@ -306,7 +266,7 @@
 		
 		//création d'un objet permettant de connaître le status de l'exécution de la requête
 		sqlite3_stmt *compiledStatement;
-		NSLog(@"data %@", databasePath);
+//		NSLog(@"data %@", databasePath);
 		
 		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
 			// On boucle tant que l'on trouve des objets dans la BDD
@@ -331,7 +291,6 @@
 	}
 	//On ferme la bdd
 	sqlite3_close(database);
-	NSLog(@"%@", scores);
 }
 
 -(void) affichagePartieJoueeDepuisLaBase{
@@ -353,19 +312,13 @@
 		const char *sqlStatement = "select preneur.nom as preneur, appele.nom as appele, c.libelleContrat, po.libellePoignee, chA.libelleChelem, b.libelleBouts, pe.libellePetit, chR.libelleOuiNon, p.score from PARTIE p, JOUEUR preneur, JOUEUR appele, CONTRAT c, POIGNEE po, CHELEM chA, BOUTS b, PETIT pe, OUINON chR WHERE p.preneur=preneur.id AND p.contrat=c.id AND p.appele = appele.id AND p.poignee = po.id AND p.chelemA = chA.id AND p.nbBouts = b.id AND p.petit = pe.id AND p.chelemR = chR.id;";
 		//création d'un objet permettant de connaître le status de l'exécution de la requête
 		sqlite3_stmt *compiledStatement;
-		NSLog(@"data %@", databasePath);
+//		NSLog(@"data %@", databasePath);
 		
 		NSInteger cptPartie=0;
 		
 		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
 			// On boucle tant que l'on trouve des objets dans la BDD
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
-				// On lit les données stockées dans le fichier sql
-				// Dans la première colonne on trouve du texte que l'on place dans un NSString
-				//NSString *nom = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
-				// Dans la deuxième colonne on récupère le score dans un NSInteger
-				//NSInteger points = sqlite3_column_int(compiledStatement, 2);
-				
 				cptPartie=cptPartie+1;
 				NSString *preneur = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)];
 				NSString *appele = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];				
@@ -377,8 +330,6 @@
 				NSString *chelemR = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 7)];				
 				NSInteger score = sqlite3_column_int(compiledStatement, 8);
 				
-				
-				
 				// On crée un objet Score avec les pramètres récupérés dans la BDD
 				PartieJouee *partieJouee = [[PartieJouee alloc] initWithId:cptPartie preneur:preneur appele:appele contrat:contrat
 																		poignee:poignee chelemA:chelemA bouts:bouts petit:petit 
@@ -386,7 +337,7 @@
 				 
 				// On ajoute le score au tableau
 				if(![partiesJouees containsObject:partieJouee])
-					[partiesJouees addObject:partieJouee];
+					[partiesJouees insertObject :partieJouee atIndex:0];
 				[partieJouee release];
 			}
 		}
@@ -395,42 +346,7 @@
 	}
 	//On ferme la bdd
 	sqlite3_close(database);
-	NSLog(@"%@", partiesJouees);
 }
-
-/*
-- (void)insertIntoDatabase:(Score*)newScore {	
-    // Déclaration de l'objet database
-    sqlite3 *database;
-    // On ouvre la BDD à partir des fichiers système
-    if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
-        // Préparation de la requête SQL qui va permettre d'ajouter un score à la BDD       
-        NSString *sqlStat = [NSString stringWithFormat:@"INSERT INTO score (pseudo, resultat) VALUES ('%@', %d);",newScore.pseudo, newScore.resultat];
-		//conversion en char *
-		const char *sqlStatement = [sqlStat UTF8String];
-		//On utilise sqlite3_exec qui permet très simplement d'exécuter une requête sur la BDD
-		sqlite3_exec(database, sqlStatement,NULL,NULL,NULL);
-		[self readScoresFromDatabase];
-    }
-    sqlite3_close(database);
-}
-- (void)deleteFromDatabase:(Score*)oldScore {
-    // Déclaration de l'objet database
-    sqlite3 *database;
-    // On ouvre la BDD à partir des fichiers système
-    if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
-        // Préparation de la requête SQL qui va permettre de supprimer un score à la BDD       
-        NSString *sqlStat = [NSString stringWithFormat:@"DELETE FROM score WHERE id = %d;",oldScore.primaryKey];
-        //conversion en char *
-        const char *sqlStatement = [sqlStat UTF8String];
-        //On utilise sqlite3_exec qui permet très simplement d'exécuter une requète sur la BDD
-        sqlite3_exec(database, sqlStatement,NULL,NULL,NULL);
-        [self readScoresFromDatabase];
-    }
-    sqlite3_close(database);
-}
- */
-
 
 - (void) dealloc {
 	[databasePath release];

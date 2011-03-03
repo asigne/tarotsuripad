@@ -12,7 +12,6 @@
 
 @synthesize window;
 @synthesize navController;
-//@synthesize joueurs;
 @synthesize nbJoueursPartie;
 @synthesize nbParties;
 
@@ -23,8 +22,6 @@
 	
     navController = [[UINavigationController alloc] init];
 	[window addSubview:navController.view];	
-	
-	//joueurs = [[NSMutableArray alloc] init];//WithCapacity:nbJoueurs];
 	nbJoueursPartie=0;
 	nbParties=0;
 	

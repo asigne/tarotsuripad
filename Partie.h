@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TarotIpadAppDelegate.h"
-#import "SQLManager.h"
-#import "Score.h"
-#import "PartieJouee.h"
+
+@class TarotIpadAppDelegate;
+@class SQLManager;
 
 
 @interface Partie : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDataSource, UITableViewDataSource> {
@@ -31,7 +31,7 @@
 	UISwitch *switchChelem;
 	UITextField *score;
 	
-	UIButton *valider;
+	UIButton *btnValider;
 	
 	TarotIpadAppDelegate *app;
 	SQLManager *manager;
@@ -47,10 +47,11 @@
 @property (nonatomic, retain) IBOutlet UILabel *preneurJ4, *contratJ4;
 @property (nonatomic, retain) IBOutlet UISwitch* switchChelem;
 @property (nonatomic, retain) IBOutlet UITextField* score;
-@property (nonatomic, retain) IBOutlet UIButton* valider;
+@property (nonatomic, retain) IBOutlet UIButton* btnValider;
 @property (nonatomic, retain) TarotIpadAppDelegate *app;
 @property (nonatomic, retain) SQLManager *manager;
 @property (nonatomic, retain) IBOutlet UITableView *tableScores, *tableParties;
+
 -(void) valider;
 -(void) afficherScores;
 -(void) retirerClavier:(id)sender;

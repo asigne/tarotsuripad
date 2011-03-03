@@ -1,23 +1,26 @@
 TTarotIpad
 v7
 r0
-t319553064.497442
+t320853729.562545
 cCheck dependencies
-cProcessInfoPlistFile /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Info.plist TarotIpad-Info.plist
-cCompileXIB /Users/aurelien/Documents/TarotIpad/MainWindow.xib
-cCompileXIB /Users/aurelien/Documents/TarotIpad/Accueil.xib
-cCompileXIB /Users/aurelien/Documents/TarotIpad/Partie.xib
-cCpResource build/Release-iphonesimulator/TarotIpad.app/database.sql database.sql
-cCpResource build/Release-iphonesimulator/TarotIpad.app/accueil.jpg ../../Downloads/accueil.jpg
-cProcessPCH /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-frhjimhphpqrnhgyxlbknpetpeds/TarotIpad_Prefix.pch.gch TarotIpad_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o /Users/aurelien/Documents/TarotIpad/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o /Users/aurelien/Documents/TarotIpad/Accueil.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o /Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o /Users/aurelien/Documents/TarotIpad/Partie.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad normal i386
-cGenerateDSYMFile /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app.dSYM /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad
-cTouch /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
+cProcessInfoPlistFile /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Info.plist TarotIpad-Info.plist
+cCompileXIB /Users/aurelien/Documents/workspace/TarotIpad/MainWindow.xib
+cCompileXIB /Users/aurelien/Documents/workspace/TarotIpad/Accueil.xib
+cCompileXIB /Users/aurelien/Documents/workspace/TarotIpad/Partie.xib
+cCpResource build/Release-iphonesimulator/TarotIpad.app/TarotIpad.sql TarotIpad.sql
+cCpResource build/Release-iphonesimulator/TarotIpad.app/accueil.jpg accueil.jpg
+cProcessPCH /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch.gch TarotIpad_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o /Users/aurelien/Documents/workspace/TarotIpad/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/TarotIpadAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o /Users/aurelien/Documents/workspace/TarotIpad/Accueil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o /Users/aurelien/Documents/workspace/TarotIpad/Partie.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/SQLManager.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/SQLManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/Joueur.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Score.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/Score.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/PartieJouee.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/../PartieJouee.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad normal i386
+cGenerateDSYMFile /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app.dSYM /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad
+cTouch /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
 c000000004D2DCB320000000000000110
@@ -49,6 +52,16 @@ c000000004CC12883000000000074D7B0
 t1287727235
 s7657392
 
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sqlite3.h
+c000000004CC109C90000000000042B54
+t1287719369
+s273236
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libsqlite3.dylib
+c000000004CC109D90000000000092C20
+t1287719385
+s601120
+
 N/Users/aurelien/Documents/Tarot/Joueur.h
 c000000004D52C5FB000000000000019A
 t1297270267
@@ -73,64 +86,122 @@ s476
 i"Joueur.h"
 
 N/Users/aurelien/Documents/TarotIpad/Accueil.h
-c000000004D6E7C35000000000000036F
-t1299086389
-s879
+c000000004D6DFB320000000000000466
+t1299053362
+s1126
 i<UIKit/UIKit.h>
-i"TarotIpadAppDelegate.h"
-i"Partie.h"
+i"Joueur.h"
+i"SQLManager.h"
 
 N/Users/aurelien/Documents/TarotIpad/Accueil.m
-c000000004D6E7C350000000000000B94
-t1299086389
-s2964
+c000000004D6E160C0000000000000DA3
+t1299060236
+s3491
 i"Accueil.h"
 
 N/Users/aurelien/Documents/TarotIpad/Accueil.xib
-c000000004D6E7C35000000000000BC1C
-t1299086389
-s48156
+c000000004D5CF322000000000000BC18
+t1297937186
+s48152
 
-N/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.h
-c000000004D6E7C350000000000000248
-t1299086389
-s584
-i<UIKit/UIKit.h>
-i"Accueil.h"
+N/Users/aurelien/Documents/TarotIpad/Classes/../PartieJouee.m
+c000000004D6E78CC0000000000000379
+t1299085516
+s889
+i"PartieJouee.h"
+
+N/Users/aurelien/Documents/TarotIpad/Classes/Joueur.h
+c000000004D6DF5A200000000000001B2
+t1299051938
+s434
+i<Foundation/Foundation.h>
+
+N/Users/aurelien/Documents/TarotIpad/Classes/Joueur.m
+c000000004D6DF5B70000000000000206
+t1299051959
+s518
 i"Joueur.h"
 
+N/Users/aurelien/Documents/TarotIpad/Classes/SQLManager.h
+c000000004D6E11FF000000000000054C
+t1299059199
+s1356
+i<Foundation/Foundation.h>
+i<sqlite3.h>
+i"Score.h"
+i"PartieJouee.h"
+
+N/Users/aurelien/Documents/TarotIpad/Classes/SQLManager.m
+c000000004D6E79150000000000004848
+t1299085589
+s18504
+i"SQLManager.h"
+
+N/Users/aurelien/Documents/TarotIpad/Classes/Score.h
+c000000004D5E4366000000000000022A
+t1298023270
+s554
+i<Foundation/Foundation.h>
+
+N/Users/aurelien/Documents/TarotIpad/Classes/Score.m
+c000000004D5E43790000000000000169
+t1298023289
+s361
+i"Score.h"
+
+N/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.h
+c000000004D6E172200000000000002E7
+t1299060514
+s743
+i<UIKit/UIKit.h>
+i"Accueil.h"
+
 N/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m
-c000000004D6E7C3500000000000007D5
-t1299086389
-s2005
+c000000004D6E1743000000000000082D
+t1299060547
+s2093
 i"TarotIpadAppDelegate.h"
 
 N/Users/aurelien/Documents/TarotIpad/MainWindow.xib
-c000000004D6E7C350000000000003E77
-t1299086389
+c000000004D515A8B0000000000003E77
+t1297177227
 s15991
 
 N/Users/aurelien/Documents/TarotIpad/Partie.h
-c000000004D6E7C350000000000000687
-t1299086389
-s1671
+c000000004D6E09C100000000000006F8
+t1299057089
+s1784
 i<UIKit/UIKit.h>
 i"TarotIpadAppDelegate.h"
+i"SQLManager.h"
+i"Score.h"
+i"PartieJouee.h"
 
 N/Users/aurelien/Documents/TarotIpad/Partie.m
-c000000004D6E7C350000000000003AB6
-t1299086389
-s15030
+c000000004D6E7B7800000000000046CB
+t1299086200
+s18123
 i"Partie.h"
 
 N/Users/aurelien/Documents/TarotIpad/Partie.xib
-c000000004D6E7C3500000000000122C0
-t1299086389
-s74432
+c000000004D6E050F000000000000D08F
+t1299055887
+s53391
+
+N/Users/aurelien/Documents/TarotIpad/PartieJouee.h
+c000000004D6E793900000000000004DF
+t1299085625
+s1247
+i<Foundation/Foundation.h>
+
+N/Users/aurelien/Documents/TarotIpad/TarotIpad.sql
+c000000004D6E6EA40000000000004800
+t1299082916
+s18432
 
 N/Users/aurelien/Documents/TarotIpad/TarotIpad_Prefix.pch
-c000000004D6E7C3500000000000000BB
-t1299086389
+c000000004D515A8B00000000000000BB
+t1297177227
 s187
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
@@ -167,6 +238,10 @@ N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
 t1299086374
 s52480
 
+N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad.sql
+t2
+s0
+
 N/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/accueil.jpg
 t1299086374
 s248291
@@ -187,6 +262,18 @@ N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulat
 t1299086377
 s92624
 
+N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/PartieJouee.o
+t2
+s0
+
+N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/SQLManager.o
+t2
+s0
+
+N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Score.o
+t2
+s0
+
 N/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpad.LinkFileList
 c000000004D6E7C290000000000000288
 t1299086377
@@ -206,23 +293,242 @@ t1299086389
 s4096
 
 N/Users/aurelien/Documents/TarotIpad/main.m
-c000000004D6E7C35000000000000016F
-t1299086389
+c000000004D515A8B000000000000016F
+t1297177227
 s367
 i<UIKit/UIKit.h>
+
+N/Users/aurelien/Documents/workspace/TarotIpad/../../Downloads/accueil.jpg
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Accueil.h
+c000000004D6F9D1600000000000003FF
+t1299160342
+s1023
+i<UIKit/UIKit.h>
+i"TarotIpadAppDelegate.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Accueil.m
+c000000004D6F9D580000000000000A54
+t1299160408
+s2644
+i"Accueil.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Accueil.xib
+c000000004D6F9C96000000000000BDA2
+t1299160214
+s48546
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/../PartieJouee.m
+c000000004D6E78CC0000000000000379
+t1299085516
+s889
+i"PartieJouee.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/Joueur.h
+c000000004D6DF5A200000000000001B2
+t1299051938
+s434
+i<Foundation/Foundation.h>
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/Joueur.m
+c000000004D6DF5B70000000000000206
+t1299051959
+s518
+i"Joueur.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/SQLManager.h
+c000000004D6F9E0500000000000004EE
+t1299160581
+s1262
+i<Foundation/Foundation.h>
+i<sqlite3.h>
+i"Score.h"
+i"PartieJouee.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/SQLManager.m
+c000000004D6F9F470000000000003C0F
+t1299160903
+s15375
+i"SQLManager.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/Score.h
+c000000004D5E4366000000000000022A
+t1298023270
+s554
+i<Foundation/Foundation.h>
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/Score.m
+c000000004D5E43790000000000000169
+t1298023289
+s361
+i"Score.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/TarotIpadAppDelegate.h
+c000000004D6F91F600000000000002F1
+t1299157494
+s753
+i<UIKit/UIKit.h>
+i"Accueil.h"
+i"Partie.h"
+i"Joueur.h"
+i"SQLManager.h"
+i"Score.h"
+i"PartieJouee.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Classes/TarotIpadAppDelegate.m
+c000000004D6F9E2A00000000000007CE
+t1299160618
+s1998
+i"TarotIpadAppDelegate.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/MainWindow.xib
+c000000004D515A8B0000000000003E77
+t1297177227
+s15991
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Partie.h
+c000000004D6F910A00000000000006EF
+t1299157258
+s1775
+i<UIKit/UIKit.h>
+i"TarotIpadAppDelegate.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Partie.m
+c000000004D6F9DF30000000000003D3D
+t1299160563
+s15677
+i"Partie.h"
+
+N/Users/aurelien/Documents/workspace/TarotIpad/Partie.xib
+c000000004D6F9220000000000000D1B3
+t1299157536
+s53683
+
+N/Users/aurelien/Documents/workspace/TarotIpad/PartieJouee.h
+c000000004D6E793900000000000004DF
+t1299085625
+s1247
+i<Foundation/Foundation.h>
+
+N/Users/aurelien/Documents/workspace/TarotIpad/TarotIpad.sql
+c000000004D6E6EA40000000000004800
+t1299082916
+s18432
+
+N/Users/aurelien/Documents/workspace/TarotIpad/TarotIpad_Prefix.pch
+c000000004D515A8B00000000000000BB
+t1297177227
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/aurelien/Documents/workspace/TarotIpad/accueil.jpg
+c000000004D6F8E25000000000003C9E3
+t1299156517
+s248291
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
+t1299160905
+s408
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app.dSYM
+t1299160905
+s136
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Accueil.nib
+t1299160217
+s4380
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Info.plist
+t1299086374
+s806
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/MainWindow.nib
+t1299086374
+s986
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Partie.nib
+t1299157537
+s4356
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/PkgInfo
+t1299086374
+s8
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad
+t1299160905
+s70584
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad.sql
+t1299156446
+s18432
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/accueil.jpg
+t1299156559
+s248291
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o
+t1299160790
+s66532
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o
+t1299156447
+s9796
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o
+t1299160790
+s95188
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/PartieJouee.o
+t1299156448
+s16988
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/SQLManager.o
+t1299160905
+s28296
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Score.o
+t1299156447
+s9720
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpad.LinkFileList
+c000000004D6F8DDE000000000000045D
+t1299156446
+s1117
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o
+t1299160790
+s55668
+
+N/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o
+t1299156447
+s6304
+
+N/Users/aurelien/Documents/workspace/TarotIpad/main.m
+c000000004D515A8B000000000000016F
+t1297177227
+s367
+i<UIKit/UIKit.h>
+
+N/var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch.gch
+t1299156447
+s15113424
 
 N/var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-frhjimhphpqrnhgyxlbknpetpeds/TarotIpad_Prefix.pch.gch
 t1297850163
 s15113424
 
 NTarotIpad-Info.plist
-c000000004D6E7C3500000000000004D6
-t1299086389
+c000000004D515A8B00000000000004D6
+t1297177227
 s1238
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies319553063#319553063#0(0"0(0#1#0"8637803264#0"0#
+lSLF07#2@18"Check dependencies320853729#320853729#0(0"0(0#1#0"8619277888#0"0#
 
 CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o /Users/aurelien/Documents/TarotIpad/Accueil.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319552982.091042
@@ -242,6 +548,19 @@ o/Users/aurelien/Documents/TarotIpad/Accueil.m:117: warning: property 'nbJoueurs
 o/Users/aurelien/Documents/TarotIpad/Accueil.m:117: warning: property 'nbJoueurs' requires the method 'setNbJoueurs:' to be defined - use @synthesize, @dynamic or provide a method implementation
 lSLF07#2@53"Compile /Users/aurelien/Documents/TarotIpad/Accueil.m319552982#319552982#0(645"In file included from /Users/aurelien/Documents/TarotIpad/Accueil.h:11,                 from /Users/aurelien/Documents/TarotIpad/Accueil.m:9:/Users/aurelien/Documents/TarotIpad/Partie.h:62: warning: type of accessor does not match the type of property 'valider'/Users/aurelien/Documents/TarotIpad/Accueil.m:117: warning: property 'nbJoueurs' requires method '-nbJoueurs' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aurelien/Documents/TarotIpad/Accueil.m:117: warning: property 'nbJoueurs' requires the method 'setNbJoueurs:' to be defined - use @synthesize, @dynamic or provide a method implementation3(22@62"Type of accessor does not match the type of property 'valider'319552982#143#121#3(7@67"In file included from /Users/aurelien/Documents/TarotIpad/Accueil.m319552982#18446744073709551615#0#0(6@45"/Users/aurelien/Documents/TarotIpad/Accueil.m319552232#9#0#9#0#0"0(7@67"In file included from /Users/aurelien/Documents/TarotIpad/Accueil.h319552982#18446744073709551615#0#0(6@45"/Users/aurelien/Documents/TarotIpad/Accueil.h319544868#11#0#11#0#0"0(13@110"Type of accessor does not match the type of property 'valider' in /Users/aurelien/Documents/TarotIpad/Partie.h319552982#18446744073709551615#0#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#62#0#62#0#0"0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#62#0#62#0#0"0(22@126"Property 'nbJoueurs' requires method '-nbJoueurs' to be defined - use @synthesize, @dynamic or provide a method implementation319552982#264#187#0(6@45"/Users/aurelien/Documents/TarotIpad/Accueil.m319552232#117#0#117#0#0"0(22@133"Property 'nbJoueurs' requires the method 'setNbJoueurs:' to be defined - use @synthesize, @dynamic or provide a method implementation319552982#451#194#0(6@45"/Users/aurelien/Documents/TarotIpad/Accueil.m319552232#117#0#117#0#0"0(0#0#45"/Users/aurelien/Documents/TarotIpad/Accueil.m8637604416#1986"    cd /Users/aurelien/Documents/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-frhjimhphpqrnhgyxlbknpetpeds/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/TarotIpad/Accueil.m -o /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o0#
 
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o /Users/aurelien/Documents/workspace/TarotIpad/Accueil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320853589.876743
+e320853590.154123
+r1
+xCompileC
+xbuild/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o
+x/Users/aurelien/Documents/workspace/TarotIpad/Accueil.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/aurelien/Documents/workspace/TarotIpad/Accueil.m320853589#320853590#0(0"0(0#0#55"/Users/aurelien/Documents/workspace/TarotIpad/Accueil.m8637622272#2096"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/workspace/TarotIpad/Accueil.m -o /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Accueil.o0#
+
 CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o /Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319542963.665981
 e319542963.780924
@@ -254,6 +573,22 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@61"Compile /Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.m319542963#319542963#0(0"0(0#0#53"/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.m8636719200#1993"    cd /Users/aurelien/Documents/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-frhjimhphpqrnhgyxlbknpetpeds/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.m -o /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o0#
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o /Users/aurelien/Documents/TarotIpad/Classes/Joueur.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/Joueur.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320849247.845903
+e320849247.924961
+r1
+xCompileC
+xbuild/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o
+x/Users/aurelien/Documents/workspace/TarotIpad/Classes/Joueur.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/aurelien/Documents/workspace/TarotIpad/Classes/Joueur.m320849247#320849247#0(0"0(0#0#62"/Users/aurelien/Documents/workspace/TarotIpad/Classes/Joueur.m8602619104#2102"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/workspace/TarotIpad/Classes/Joueur.m -o /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Joueur.o0#
 
 CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o /Users/aurelien/Documents/TarotIpad/Partie.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319553063.755087
@@ -299,6 +634,67 @@ o/Users/aurelien/Documents/TarotIpad/Partie.m:540: warning: property 'contratJ4'
 o/Users/aurelien/Documents/TarotIpad/Partie.m:540: warning: property 'contratJ4' requires the method 'setContratJ4:' to be defined - use @synthesize, @dynamic or provide a method implementation
 lSLF07#2@52"Compile /Users/aurelien/Documents/TarotIpad/Partie.m319553063#319553064#0(3253"In file included from /Users/aurelien/Documents/TarotIpad/Partie.m:9:/Users/aurelien/Documents/TarotIpad/Partie.h:62: warning: type of accessor does not match the type of property 'valider'/Users/aurelien/Documents/TarotIpad/Partie.m: In function '-[Partie viewDidLoad]':/Users/aurelien/Documents/TarotIpad/Partie.m:91: warning: 'NSArray' may not respond to '-insertObject:atIndex:'/Users/aurelien/Documents/TarotIpad/Partie.m:91: warning: (Messages without a matching method signature/Users/aurelien/Documents/TarotIpad/Partie.m:91: warning: will be assumed to return 'id' and accept/Users/aurelien/Documents/TarotIpad/Partie.m:91: warning: '...' as arguments.)/Users/aurelien/Documents/TarotIpad/Partie.m: In function '-[Partie afficherScores]':/Users/aurelien/Documents/TarotIpad/Partie.m:368: warning: multiple methods named '-score' found/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h:16: warning: using '-(double)score'/Users/aurelien/Documents/TarotIpad/Partie.h:52: warning: also found '-(UITextField *)score'/Users/aurelien/Documents/TarotIpad/Partie.m:369: warning: multiple methods named '-score' found/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h:16: warning: using '-(double)score'/Users/aurelien/Documents/TarotIpad/Partie.h:52: warning: also found '-(UITextField *)score'/Users/aurelien/Documents/TarotIpad/Partie.m:370: warning: multiple methods named '-score' found/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h:16: warning: using '-(double)score'/Users/aurelien/Documents/TarotIpad/Partie.h:52: warning: also found '-(UITextField *)score'/Users/aurelien/Documents/TarotIpad/Partie.m:371: warning: multiple methods named '-score' found/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h:16: warning: using '-(double)score'/Users/aurelien/Documents/TarotIpad/Partie.h:52: warning: also found '-(UITextField *)score'/Users/aurelien/Documents/TarotIpad/Partie.m:372: warning: multiple methods named '-score' found/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h:16: warning: using '-(double)score'/Users/aurelien/Documents/TarotIpad/Partie.h:52: warning: also found '-(UITextField *)score'/Users/aurelien/Documents/TarotIpad/Partie.m:376: warning: multiple methods named '-score' found/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h:16: warning: using '-(double)score'/Users/aurelien/Documents/TarotIpad/Partie.h:52: warning: also found '-(UITextField *)score'/Users/aurelien/Documents/TarotIpad/Partie.m: At top level:/Users/aurelien/Documents/TarotIpad/Partie.m:540: warning: property 'preneurJ4' requires method '-preneurJ4' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aurelien/Documents/TarotIpad/Partie.m:540: warning: property 'preneurJ4' requires the method 'setPreneurJ4:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aurelien/Documents/TarotIpad/Partie.m:540: warning: property 'contratJ4' requires method '-contratJ4' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aurelien/Documents/TarotIpad/Partie.m:540: warning: property 'contratJ4' requires the method 'setContratJ4:' to be defined - use @synthesize, @dynamic or provide a method implementation26(22@62"Type of accessor does not match the type of property 'valider'319553063#70#121#2(7@66"In file included from /Users/aurelien/Documents/TarotIpad/Partie.m319553063#18446744073709551615#0#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#9#0#9#0#0"0(13@110"Type of accessor does not match the type of property 'valider' in /Users/aurelien/Documents/TarotIpad/Partie.h319553063#18446744073709551615#0#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#62#0#62#0#0"0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#62#0#62#0#0"0(22@53"'NSArray' may not respond to '-insertObject:atIndex:'319553063#274#112#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#91#0#91#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)319553063#386#104#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#91#0#91#0#0"0(22@37"Multiple methods named '-score' found319553063#755#97#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#368#0#368#0#0"0(22@22"Using '-(double)score'319553063#852#90#0(6@53"/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h318963067#16#0#16#0#0"0(22@34"Also found '-(UITextField *)score'319553063#942#93#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#52#0#52#0#0"0(22@37"Multiple methods named '-score' found319553063#1035#97#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#369#0#369#0#0"0(22@22"Using '-(double)score'319553063#1132#90#0(6@53"/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h318963067#16#0#16#0#0"0(22@34"Also found '-(UITextField *)score'319553063#1222#93#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#52#0#52#0#0"0(22@37"Multiple methods named '-score' found319553063#1315#97#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#370#0#370#0#0"0(22@22"Using '-(double)score'319553063#1412#90#0(6@53"/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h318963067#16#0#16#0#0"0(22@34"Also found '-(UITextField *)score'319553063#1502#93#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#52#0#52#0#0"0(22@37"Multiple methods named '-score' found319553063#1595#97#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#371#0#371#0#0"0(22@22"Using '-(double)score'319553063#1692#90#0(6@53"/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h318963067#16#0#16#0#0"0(22@34"Also found '-(UITextField *)score'319553063#1782#93#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#52#0#52#0#0"0(22@37"Multiple methods named '-score' found319553063#1875#97#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#372#0#372#0#0"0(22@22"Using '-(double)score'319553063#1972#90#0(6@53"/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h318963067#16#0#16#0#0"0(22@34"Also found '-(UITextField *)score'319553063#2062#93#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#52#0#52#0#0"0(22@37"Multiple methods named '-score' found319553063#2155#97#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#376#0#376#0#0"0(22@22"Using '-(double)score'319553063#2252#90#0(6@53"/Users/aurelien/Documents/TarotIpad/../Tarot/Joueur.h318963067#16#0#16#0#0"0(22@34"Also found '-(UITextField *)score'319553063#2342#93#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#52#0#52#0#0"0(23@13"At top level:319553063#2435#60#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#0#0#0#0#0"0(22@126"Property 'preneurJ4' requires method '-preneurJ4' to be defined - use @synthesize, @dynamic or provide a method implementation319553063#2495#186#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#540#0#540#0#0"0(22@133"Property 'preneurJ4' requires the method 'setPreneurJ4:' to be defined - use @synthesize, @dynamic or provide a method implementation319553063#2681#193#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#540#0#540#0#0"0(22@126"Property 'contratJ4' requires method '-contratJ4' to be defined - use @synthesize, @dynamic or provide a method implementation319553063#2874#186#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#540#0#540#0#0"0(22@133"Property 'contratJ4' requires the method 'setContratJ4:' to be defined - use @synthesize, @dynamic or provide a method implementation319553063#3060#193#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.m319553061#540#0#540#0#0"0(0#0#44"/Users/aurelien/Documents/TarotIpad/Partie.m8629924864#1984"    cd /Users/aurelien/Documents/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-frhjimhphpqrnhgyxlbknpetpeds/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/TarotIpad/Partie.m -o /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o0#
 
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o /Users/aurelien/Documents/workspace/TarotIpad/Partie.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320853590.038148
+e320853590.640232
+r1
+xCompileC
+xbuild/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o
+x/Users/aurelien/Documents/workspace/TarotIpad/Partie.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/aurelien/Documents/workspace/TarotIpad/Partie.m320853590#320853590#0(0"0(0#0#54"/Users/aurelien/Documents/workspace/TarotIpad/Partie.m8622775872#2094"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/workspace/TarotIpad/Partie.m -o /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Partie.o0#
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/PartieJouee.o /Users/aurelien/Documents/TarotIpad/Classes/../PartieJouee.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/PartieJouee.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/../PartieJouee.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320849248.001282
+e320849248.100758
+r1
+xCompileC
+xbuild/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/PartieJouee.o
+x/Users/aurelien/Documents/workspace/TarotIpad/Classes/../PartieJouee.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/aurelien/Documents/workspace/TarotIpad/Classes/../PartieJouee.m320849248#320849248#0(0"0(0#0#70"/Users/aurelien/Documents/workspace/TarotIpad/Classes/../PartieJouee.m8601888384#2115"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/workspace/TarotIpad/Classes/../PartieJouee.m -o /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/PartieJouee.o0#
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/SQLManager.o /Users/aurelien/Documents/TarotIpad/Classes/SQLManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/SQLManager.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/SQLManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320853704.968424
+e320853705.224401
+r1
+xCompileC
+xbuild/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/SQLManager.o
+x/Users/aurelien/Documents/workspace/TarotIpad/Classes/SQLManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/aurelien/Documents/workspace/TarotIpad/Classes/SQLManager.m320853704#320853705#0(0"0(0#0#66"/Users/aurelien/Documents/workspace/TarotIpad/Classes/SQLManager.m8618672544#2110"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/workspace/TarotIpad/Classes/SQLManager.m -o /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/SQLManager.o0#
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Score.o /Users/aurelien/Documents/TarotIpad/Classes/Score.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Score.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/Score.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320849247.925059
+e320849248.001074
+r1
+xCompileC
+xbuild/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Score.o
+x/Users/aurelien/Documents/workspace/TarotIpad/Classes/Score.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/aurelien/Documents/workspace/TarotIpad/Classes/Score.m320849247#320849248#0(0"0(0#0#61"/Users/aurelien/Documents/workspace/TarotIpad/Classes/Score.m8601884128#2100"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/workspace/TarotIpad/Classes/Score.m -o /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/Score.o0#
+
 CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319552982.088017
 e319552982.235923
@@ -316,6 +712,19 @@ o                 from /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppD
 o/Users/aurelien/Documents/TarotIpad/Partie.h:62: warning: type of accessor does not match the type of property 'valider'
 lSLF07#2@74"Compile /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m319552982#319552982#0(378"In file included from /Users/aurelien/Documents/TarotIpad/Accueil.h:11,                 from /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.h:10,                 from /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m:9:/Users/aurelien/Documents/TarotIpad/Partie.h:62: warning: type of accessor does not match the type of property 'valider'1(22@62"Type of accessor does not match the type of property 'valider'319552982#257#121#4(7@88"In file included from /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m319552982#18446744073709551615#0#0(6@66"/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m319544851#9#0#9#0#0"0(7@88"In file included from /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.h319552982#18446744073709551615#0#0(6@66"/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.h319544475#10#0#10#0#0"0(7@67"In file included from /Users/aurelien/Documents/TarotIpad/Accueil.h319552982#18446744073709551615#0#0(6@45"/Users/aurelien/Documents/TarotIpad/Accueil.h319544868#11#0#11#0#0"0(13@110"Type of accessor does not match the type of property 'valider' in /Users/aurelien/Documents/TarotIpad/Partie.h319552982#18446744073709551615#0#0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#62#0#62#0#0"0(6@44"/Users/aurelien/Documents/TarotIpad/Partie.h319552901#62#0#62#0#0"0(0#0#66"/Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m8636988736#2020"    cd /Users/aurelien/Documents/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-frhjimhphpqrnhgyxlbknpetpeds/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/TarotIpad/Classes/TarotIpadAppDelegate.m -o /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o0#
 
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o /Users/aurelien/Documents/workspace/TarotIpad/Classes/TarotIpadAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320853589.875500
+e320853590.038046
+r1
+xCompileC
+xbuild/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o
+x/Users/aurelien/Documents/workspace/TarotIpad/Classes/TarotIpadAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/aurelien/Documents/workspace/TarotIpad/Classes/TarotIpadAppDelegate.m320853589#320853590#0(0"0(0#0#76"/Users/aurelien/Documents/workspace/TarotIpad/Classes/TarotIpadAppDelegate.m8618646208#2130"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/workspace/TarotIpad/Classes/TarotIpadAppDelegate.m -o /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpadAppDelegate.o0#
+
 CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o /Users/aurelien/Documents/TarotIpad/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319542963.498075
 e319542963.572894
@@ -328,6 +737,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@50"Compile /Users/aurelien/Documents/TarotIpad/main.m319542963#319542963#0(0"0(0#0#42"/Users/aurelien/Documents/TarotIpad/main.m8624963488#1980"    cd /Users/aurelien/Documents/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-frhjimhphpqrnhgyxlbknpetpeds/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/TarotIpad/main.m -o /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o0#
+
+CCompileC build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o /Users/aurelien/Documents/workspace/TarotIpad/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320849247.234929
+e320849247.294497
+r1
+xCompileC
+xbuild/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o
+x/Users/aurelien/Documents/workspace/TarotIpad/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/aurelien/Documents/workspace/TarotIpad/main.m320849247#320849247#0(0"0(0#0#52"/Users/aurelien/Documents/workspace/TarotIpad/main.m8606376352#2090"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch -c /Users/aurelien/Documents/workspace/TarotIpad/main.m -o /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/main.o0#
 
 CCompileXIB /Users/aurelien/Documents/TarotIpad/Accueil.xib
 s319551960.800160
@@ -353,14 +775,52 @@ xCompileXIB
 x/Users/aurelien/Documents/TarotIpad/Partie.xib
 lSLF07#2@21"CompileXIB Partie.xib319553040#319553041#0(0"0(0#0#46"/Users/aurelien/Documents/TarotIpad/Partie.xib8626923520#557"    cd /Users/aurelien/Documents/TarotIpad    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Partie.nib /Users/aurelien/Documents/TarotIpad/Partie.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
-CCpResource build/Release-iphonesimulator/TarotIpad.app/accueil.jpg ../../Downloads/accueil.jpg
-s319542961.162146
-e319542961.169565
+CCompileXIB /Users/aurelien/Documents/workspace/TarotIpad/Accueil.xib
+s320853017.330629
+e320853017.924539
 r1
+xCompileXIB
+x/Users/aurelien/Documents/workspace/TarotIpad/Accueil.xib
+lSLF07#2@22"CompileXIB Accueil.xib320853017#320853017#0(0"0(0#0#57"/Users/aurelien/Documents/workspace/TarotIpad/Accueil.xib8619732128#589"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Accueil.nib /Users/aurelien/Documents/workspace/TarotIpad/Accueil.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/aurelien/Documents/workspace/TarotIpad/MainWindow.xib
+r0
+
+CCompileXIB /Users/aurelien/Documents/workspace/TarotIpad/Partie.xib
+s320850337.273404
+e320850337.836855
+r1
+xCompileXIB
+x/Users/aurelien/Documents/workspace/TarotIpad/Partie.xib
+lSLF07#2@21"CompileXIB Partie.xib320850337#320850337#0(0"0(0#0#56"/Users/aurelien/Documents/workspace/TarotIpad/Partie.xib8618107648#587"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Partie.nib /Users/aurelien/Documents/workspace/TarotIpad/Partie.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Release-iphonesimulator/TarotIpad.app/TarotIpad.sql TarotIpad.sql
+s320849246.449032
+e320849246.460218
+r1
+xCpResource
+xbuild/Release-iphonesimulator/TarotIpad.app/TarotIpad.sql
+xTarotIpad.sql
+lSLF07#2@18"Copy TarotIpad.sql320849246#320849246#0(0"0(0#0#59"/Users/aurelien/Documents/workspace/TarotIpad/TarotIpad.sql8602245824#517"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/aurelien/Documents/workspace/TarotIpad/TarotIpad.sql /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app0#
+
+CCpResource build/Release-iphonesimulator/TarotIpad.app/accueil.jpg ../../Downloads/accueil.jpg
+s320849349.587845
+e320849349.593675
+r0
 xCpResource
 xbuild/Release-iphonesimulator/TarotIpad.app/accueil.jpg
 x../../Downloads/accueil.jpg
-lSLF07#2@32"Copy ../../Downloads/accueil.jpg319542961#319542961#0(0"0(0#0#63"/Users/aurelien/Documents/TarotIpad/../../Downloads/accueil.jpg8623476672#501"    cd /Users/aurelien/Documents/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/aurelien/Documents/TarotIpad/../../Downloads/accueil.jpg /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app0#
+o/Users/aurelien/Documents/workspace/TarotIpad/../../Downloads: No such file or directory
+lSLF07#2@32"Copy ../../Downloads/accueil.jpg320849349#320849349#0(197"/Users/aurelien/Documents/workspace/TarotIpad/../../Downloads: No such file or directoryCommand /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp failed with exit code 11(4@107"Command /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp failed with exit code 1320849349#18446744073709551615#0#0(1@0"0(0#0#73"/Users/aurelien/Documents/workspace/TarotIpad/../../Downloads/accueil.jpg8601984320#531"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/aurelien/Documents/workspace/TarotIpad/../../Downloads/accueil.jpg /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app1#
+
+CCpResource build/Release-iphonesimulator/TarotIpad.app/accueil.jpg accueil.jpg
+s320849359.138176
+e320849359.143937
+r1
+xCpResource
+xbuild/Release-iphonesimulator/TarotIpad.app/accueil.jpg
+xaccueil.jpg
+lSLF07#2@16"Copy accueil.jpg320849359#320849359#0(0"0(0#0#57"/Users/aurelien/Documents/workspace/TarotIpad/accueil.jpg8601990176#515"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/aurelien/Documents/workspace/TarotIpad/accueil.jpg /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app0#
 
 CCpResource build/Release-iphonesimulator/TarotIpad.app/database.sql database.sql
 s319542961.160169
@@ -380,6 +840,15 @@ x/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
 x/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad
 lSLF07#2@119"GenerateDSYMFile build/Release-iphonesimulator/TarotIpad.app.dSYM build/Release-iphonesimulator/TarotIpad.app/TarotIpad319553064#319553064#0(0"0(0#0#89"/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad8620284576#384"    cd /Users/aurelien/Documents/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad -o /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app.dSYM0#
 
+CGenerateDSYMFile /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app.dSYM /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad
+s320853705.255616
+e320853705.277756
+r1
+xGenerateDSYMFile
+x/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app.dSYM
+x/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad
+lSLF07#2@119"GenerateDSYMFile build/Release-iphonesimulator/TarotIpad.app.dSYM build/Release-iphonesimulator/TarotIpad.app/TarotIpad320853705#320853705#0(0"0(0#0#99"/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad8620147808#414"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad -o /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app.dSYM0#
+
 CLd /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad normal i386
 s319553064.445276
 e319553064.473779
@@ -390,6 +859,16 @@ xnormal
 xi386
 lSLF07#2@94"Link /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad319553064#319553064#0(0"0(0#0#0"8636217056#903"    cd /Users/aurelien/Documents/TarotIpad    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator -F/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator -filelist /Users/aurelien/Documents/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpad.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad0#
 
+CLd /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad normal i386
+s320853705.224484
+e320853705.255517
+r1
+xLd
+x/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad
+xnormal
+xi386
+lSLF07#2@104"Link /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad320853705#320853705#0(0"0(0#0#0"8620288352#963"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -filelist /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/Objects-normal/i386/TarotIpad.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3 -o /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/TarotIpad0#
+
 CProcessInfoPlistFile /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Info.plist TarotIpad-Info.plist
 s319542960.605591
 e319542960.617747
@@ -398,6 +877,22 @@ xProcessInfoPlistFile
 x/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Info.plist
 xTarotIpad-Info.plist
 lSLF07#2@28"Process TarotIpad-Info.plist319542960#319542960#0(0"0(0#0#56"/Users/aurelien/Documents/TarotIpad/TarotIpad-Info.plist8620556384#480"    cd /Users/aurelien/Documents/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility TarotIpad-Info.plist -genpkginfo /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app/Info.plist TarotIpad-Info.plist
+r0
+
+CProcessPCH /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch.gch TarotIpad_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s320849246.460355
+e320849247.234675
+r1
+xProcessPCH
+x/var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch.gch
+xTarotIpad_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile TarotIpad_Prefix.pch320849246#320849247#0(0"0(0#0#66"/Users/aurelien/Documents/workspace/TarotIpad/TarotIpad_Prefix.pch8602170176#1971"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-generated-files.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-own-target-headers.hmap -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-all-target-headers.hmap -iquote /Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/TarotIpad-project-headers.hmap -F/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator -I/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/include -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources/i386 -I/Users/aurelien/Documents/workspace/TarotIpad/build/TarotIpad.build/Release-iphonesimulator/TarotIpad.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/aurelien/Documents/workspace/TarotIpad/TarotIpad_Prefix.pch -o /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-chpdzvmwgrojmdceaybcyzwzbbyc/TarotIpad_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/6k/6kK6FvG6FUmgg18vBwAbFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TarotIpad_Prefix-frhjimhphpqrnhgyxlbknpetpeds/TarotIpad_Prefix.pch.gch TarotIpad_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s319542961.687535
@@ -419,4 +914,12 @@ r1
 xTouch
 x/Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
 lSLF07#2@85"Touch /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app319553064#319553064#0(0"0(0#0#0"8637573504#276"    cd /Users/aurelien/Documents/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/aurelien/Documents/TarotIpad/build/Release-iphonesimulator/TarotIpad.app0#
+
+CTouch /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
+s320853705.277844
+e320853705.280370
+r1
+xTouch
+x/Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app
+lSLF07#2@95"Touch /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app320853705#320853705#0(0"0(0#0#0"8620041792#296"    cd /Users/aurelien/Documents/workspace/TarotIpad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/aurelien/Documents/workspace/TarotIpad/build/Release-iphonesimulator/TarotIpad.app0#
 
